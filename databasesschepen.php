@@ -24,12 +24,11 @@ echo "connected";
 <?php
 
 
-$conn->query("INSERT INTO `schepen2`(`schepen`, `history`, `keurmerk`) VALUES ('".$_POST['schepen']."','".$_POST['history']."','".$_POST['keurmerk']."')");
+//$conn->query("INSERT INTO `schepen2`(`schepen`, `history`, `keurmerk`) VALUES ('".$_POST['schepen']."','".$_POST['history']."','".$_POST['keurmerk']."')");
 
 
-//$schepensql = "INSERT INTO `schepen2` (`schepen`) VALUE ('".$_POST['schepen']."')";
-//$conn->query($schepensql);
-//$historysql = "INSERT INTO `schepen2` (`history`) VALUE ('".$_POST['history']."')";
-//$conn->query($historysql);
-//$keurmerksql = "INSERT INTO `schepen2` (`keurmerk`) VALUE ('".$_POST['keurmerk']."')";
-//$conn->query($keurmerksql);
+$conn->query ("INSERT INTO `schepen2` (`schepen`) VALUE ('".$_POST['schepen']."')");
+
+$conn->query ("INSERT INTO `schepen2` (`history`) VALUE ('".$_POST['history']."')");
+
+$conn->query ("INSERT INTO `schepen2` (`keurmerk`) VALUE ('".$_POST['keurmerk']."')");
